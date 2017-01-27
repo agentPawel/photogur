@@ -7,10 +7,6 @@ class PicturesController < ApplicationController
     @picture = Picture.find(params[:id])
   end
 
-  def create
-    render text: "Saving a picture. URL: #{params[:url]}, Title: #{params[:title]}, Artist: #{params[:artist]}"
-  end
-
   def new
     @pictuure = Picture.new
   end
